@@ -22,6 +22,6 @@ jobs:
         with:
           app-name: web-app-deploy
           publish-profile: ${{ secrets.SECRET_KEY_WEBDEPLOY }}
-          package: . 
+          package: .
 
               
