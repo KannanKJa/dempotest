@@ -25,7 +25,8 @@ jobs:
          
       - name: npm install, build, and test
         run: |
-          sudo apt install nodejs
+          sudo apt npm config set legacy-peer-deps true
+          sudo apt install nodejs -y
           sudo apt install npm -y
           sudo apt install curl
           npm run build --if-present
