@@ -26,6 +26,9 @@ jobs:
          
       - name: npm install, build, and test
         run: 
+          npm install
+          npm run build --if-present
+          npm run test --if-present
           npm init
           npm cache clean --force
           sudo apt npm config set legacy-peer-deps true
